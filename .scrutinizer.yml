@@ -6,10 +6,6 @@ before_commands:
 
 tools:
 
-    #external_code_coverage:
-    #    timeout: 700
-    #    runs: 1
-
     php_cpd:
         enabled: true
 
