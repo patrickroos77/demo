@@ -45,5 +45,7 @@ class thisIsJustATestClass{
     protected function badFunction()
     {
         var_dump($this->publicVar);
+
+
     }
 }
