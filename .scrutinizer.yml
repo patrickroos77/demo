@@ -1,6 +1,9 @@
 checks:
     php: true
 
+before_commands:
+    - git clone https://github.com/AOEpeople/codingstandards.git
+
 tools:
 
     #external_code_coverage:
@@ -13,7 +16,8 @@ tools:
     php_code_sniffer:
         enabled: true
         config:
-            standard: TYPO3CMS
+            standard: custom
+            ruleset: codingstandards/ide/standard/ruleset.xml
 
     php_cs_fixer:
         enabled: true
@@ -26,8 +30,7 @@ tools:
     php_mess_detector:
         enabled: true
         config:
-            controversial_rules:
-                superglobals: false
+            ruleset: codingstandards/messdetector/standard/ruleset.xml
 
     php_pdepend:
         enabled: true
