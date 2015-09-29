@@ -1,5 +1,2 @@
 <?php
-$x=true;
-if($true===true){echo 'Hello World!'}
-
-
+echo 'this is just a sandbox!';
