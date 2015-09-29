@@ -1,0 +1,14 @@
+{
+    "name": "mysandbox",
+    "config": {
+        "vendor-dir": "Packages/Libraries",
+        "discard-changes": true,
+        "preferred-install": "source"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.8.*",
+        "squizlabs/php_codesniffer": "2.3.*",
+        "aoe/codingstandards": "@dev",
+        "phpmd/phpmd": "*"
+    }
+}
